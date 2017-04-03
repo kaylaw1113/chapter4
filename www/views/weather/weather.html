@@ -1,0 +1,12 @@
+<ion-view view-title="Current Weather">
+  <ion-content>
+    <div class="list">
+      <div class="item">Current Conditions: {{wap.weather.weather[0].main}}</div>
+      <div class="item">Current Temperature: {{wap.weather.main.temp}}&deg;</div>
+      <div class="item">Humidity: {{wap.weather.main.humidity}}%</div>
+      <div class="item">Today's High: {{wap.weather.main.temp_max}}&deg;</div>
+      <div class="item">Today's Low: {{wap.weather.main.temp_min}}&deg;</div>
+      <div class="item">Wind: {{wap.weather.wind.speed}}mph, {{wap.getDirection|directionFilter}}</div>
+    </div>
+  </ion-content>
+</ion-view>
